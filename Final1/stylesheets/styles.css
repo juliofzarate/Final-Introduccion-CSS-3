@@ -1,0 +1,214 @@
+
+
+header h1{
+  font-family: Dancing Script;
+  background-color: #5b7989;
+  text-shadow: 2px 0px 0px  #02010a;
+  font-style: italic;
+  color: white;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  }
+
+  a:hover{
+    color: red;
+  }
+  
+header h1 a{
+  color: inherit;
+  text-decoration: none;
+  float: right;}
+
+@media screen and (max-width: 420px){
+  header h1 a{
+    color: inherit;
+    text-decoration: none;
+    float: right;
+  font-size: 60%;}
+}
+body p{
+
+   text-align: center;
+   font-family: Dancing Script;
+}
+.centrado, .centrado1 img{
+	margin: auto;
+	display: block;
+  box-shadow: 2px 2px 2px #82c3a6;
+
+
+  }
+  .centrado {
+    background-color: #82c3a6;
+    width: 100%;
+  }
+.contenedor{
+  display: flex;
+  flex-flow: row
+  wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #d5c75f;
+}
+.contenedor1{
+  border: 1px solid MidnightBlue;
+  color: #d5c75f;
+  float:left;
+  margin: 20px;
+  order: 1;
+}
+.contenedor2{
+  border: 1px solid MidnightBlue;
+  color: #d5c75f;
+  float:right;
+  margin: 20px;
+  order: 2;
+}
+.contenedor2 img{
+  box-shadow: 2px 2px 2px #82c3a6;
+  width:100%;
+  display:block;
+  margin: 0 auto;
+}
+.contenedor1 img{
+  box-shadow: 2px 2px 2px #82c3a6;
+  width:100%;
+  display:block;
+  margin: 0 auto;
+}
+.contenedor1 p, .contenedor2 p{
+  text-align:center;
+  font-weight:bold;
+  font-size: 16px;
+  color: black;
+}
+.contenedor1 img:hover{
+  -webkit-transform: rotate(10deg);
+ -moz-transform: rotate(10deg);
+ -ms-transform: rotate(10deg);
+ transform: rotate(10deg);
+ box-shadow: 2px 2px 2px #82c3a6;
+ border: solid 2px #CCCCCC;
+}
+.contenedor2 img:hover{
+  transform: translate(5px,-20px);
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: solid 2px #CCCCCC;
+}
+.columnas {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Dancing Script;
+}
+.contenedor div{
+  background-color: #02010a
+  box-sizing: border-box;
+  min-height: 200px;
+  min-width: 100px;
+}
+footer {
+font-family: Dancing Script;
+padding:0;
+width:100%;
+/*height: 170px;*/
+margin:0;
+right: 0;
+
+background-color: #C6d5c5;
+border-radius: 0px 0px 10px 10px;
+position: relative;
+}
+.c1 p{
+  font-family: Dancing Script;
+  font-size: 1em;
+}
+.c2 p{
+  font-family: Dancing Script;
+  font-size: 1em;
+}
+.c3 p{
+  font-family: Dancing Script;
+  font-size: 1em;
+}
+.c4 p{
+  font-family: Dancing Script;
+  font-size: 1em;
+}
+.c1, .c2, .c3, .c4{
+  color: red;
+  background-color: #C6d5c5;
+  width: 23%;
+  box-shadow: 2px 2px 2px #02010;
+}
+
+@media screen and (max-width: 420px) {
+  .columnas, .c1, p{
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .columnas, .c2, p{
+    width: 100%;
+    text-align: center;
+    order: 2;
+  }
+  .columnas, .c3, p{
+      width: 100%;
+      text-align: center;
+      order: 3;
+    }
+    .columnas, .c4, p{
+      width: 100%;
+      text-align: center;
+      order: 4;
+    }
+}
+@media screen all and (min-width: 421px) and (max-width: 720px){
+
+.contenedor1 img, .contenedor2 img{
+  max-width: 40%;
+display: inline-block;
+}
+@media screen and (max-width: 420px) {
+.contenedor1 img, .contenedor2 img {
+max-width: 100%;
+}}
+
+}
+@media screen and  (max-width: 420px) {
+  .centrado .centrado1 img{
+    max-width: 90%;
+  }
+}
+@media screen (min-width: 421px) and (max-width: 720px) {
+  .centrado .centrado1 img{
+    max-width:100%;
+  }
+}
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    margin-top: 150%;
+    width: 100%;
+  }
+
+  60% {
+    margin-top: -5%;
+    width: 100%;
+  }
+ 100% {
+   margin-top: 0%;
+   width: 100%;
+ }
+}
